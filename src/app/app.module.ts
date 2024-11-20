@@ -1,18 +1,26 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 
+import { ConferenciaModule } from './conferencia/conferencia.module';
+import { ConferenciaDetailComponent } from './conferencia-detail/conferencia-detail.component';
+
+
 @NgModule({
-  declarations: [
+   declarations: [		
+      AppComponent,
+   ],
+   imports: [
+      BrowserModule,
+      ConferenciaModule,
+      HttpClientModule
+
+   ],
+   providers: [],
+   bootstrap: [
     AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+ ]
 })
 export class AppModule { }

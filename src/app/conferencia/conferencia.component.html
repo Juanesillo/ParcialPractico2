@@ -1,0 +1,28 @@
+<div *ngIf="selected">
+  <app-conferencia-detail [Conferencia]="selectedConferencia"></app-conferencia-detail>
+ </div>
+
+<div class="container-fluid">
+  <div class="col-6">
+    <table class="table">
+      <thead>
+        <tr *ngFor="let c of conferencias">
+          <td>
+            <dd>{{c.id}}</dd>
+          </td>
+          <td>
+            <dd>{{c.name}}</dd>
+          </td>
+          <td>
+            <dd>{{c.starts}}</dd>
+          </td>
+          <td>
+            <dd>{{c.ends}}</dd>
+          </td>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+</div>

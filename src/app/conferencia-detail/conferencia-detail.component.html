@@ -1,0 +1,25 @@
+<div *ngIf="selected">
+  <app-conferencia-detail [Conferencia]="selectedConferencia"></app-conferencia-detail>
+ </div>
+ 
+
+<div class="container-fluid">
+  <p class="h3 p-3">{{ Conferencia.name }}</p>
+  <div class="row">
+    <div class="col-2">
+      <div class="thumb">
+      </div>
+    </div>
+    <div class="col">
+      <dl>
+        <dt>Authors</dt>
+        <dd>No available information</dd>
+        <dt>ISBN</dt>
+        <dd>{{ Conferencia.description }}</dd>
+      </dl>
+    </div>
+  </div>
+ </div>
+
+
+
